@@ -16,6 +16,8 @@ def get_num():
                 return num
             except:
                 print('Error')
+        else:
+            break
 
 def move(num, a, b, c):
     if num == 1:
