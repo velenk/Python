@@ -4,8 +4,8 @@ def main():
     move(num, 'A', 'B', 'C')
 
 def get_num():
-    msg = input('The Layer Number:')
     while True:
+        msg = input('The Layer Number:')
         if msg:
             try:
                 num = int(msg)
@@ -17,7 +17,7 @@ def get_num():
             except:
                 print('Error')
         else:
-            break
+            exit()
 
 def move(num, a, b, c):
     if num == 1:
